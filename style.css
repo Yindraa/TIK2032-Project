@@ -136,8 +136,8 @@ body.home-page .Home-page ul {
 }
 body.home-page .project-image {
   display: block;
-  margin-left: 0;
-  margin-right: 0;
+  margin-top: 20px;
+  margin-left: -125px;
   width: 700px;
   height: 350px;
 }
