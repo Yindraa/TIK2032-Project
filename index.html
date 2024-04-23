@@ -24,7 +24,7 @@
     </div>
     <div class="Home-page" id="homePage">
       <h2>Haii!!</h2>
-      <img src="Foto/Profile-Pic.jpg" />
+      <img src="Foto/Profile-Pic.jpg" class="profile-image" />
       <p class="intro-text">
         Allow me to introduce myself, I am Made Narayindra, a passionate 4th
         semester IT student hailing from the prestigious Sam Ratulangi
@@ -44,5 +44,17 @@
     <footer>
       <p>© 2024 Made Narayindra. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const profilePic = document.querySelector(".profile-image");
+        profilePic.addEventListener("click", function () {
+          if (confirm("Mau mutualan? Langsung aja ke halaman Contact")) {
+            window.location.href = "Contact.html";
+          }
+        });
+      });
+    </script>
   </body>
 </html>
